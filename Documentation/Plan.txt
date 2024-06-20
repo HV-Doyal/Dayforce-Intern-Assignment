@@ -1,0 +1,56 @@
+									DATA STORAGE 
+									
+				KNOWN VALUES
+				
+	Courses to be stored in a DB
+	DATABASE Assignment
+	Table course
+
+	Course - Minimun number of points - Number of seats - Fulltime Cost - Part Time Cost - Prerequisites - Number of available seats
+	Varchar - int                     - int             -  int          - int            -   array       - int
+	PK      - 
+		
+				NORMALISE IF IT FITS IN TIMEFRAME
+		
+		
+		
+	Grade and its matching number of points to be stored in a Dictionary
+	The Grade being the key and the number of points being the value.
+	
+	UNKNOWN VALUES(USER INPUT)
+	
+	DROPDOWN TO SELECT COURSE AND Matching a Grade to it
+		- No validation to drop dwon need 
+		- User input of grades need to be validated	
+											- Check if null or empty
+											- Should be a CHAR
+											- Should be between A and F
+		- ALL USER INPUT REQUIRED
+		
+	DATABSE TO STORE STUDENTS
+	
+	StudentID - First Name - Last Name - Email - Address - Contact Number - Course - Calculated FEES
+	PK        - NOT NULL   - NOT NULL  - NOT NULL                         - FK     - INT
+	
+	
+	REGISTRATION INPUT
+	
+		First Name, LaST Name
+			- NOT null 
+		Email 
+			- Validate the @
+		Address 
+			- NOT NULL
+		Contact Number
+			- Not NULL
+			- ONLY INT
+	
+	Calculation of fees
+	
+		Course should be greyed out and should not be able to be changed
+		
+		FEES
+			10% applies on when
+							- COURSE TYPE = Full time && Grade point > 45
+		
+		
