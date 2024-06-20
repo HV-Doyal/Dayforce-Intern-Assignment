@@ -20,11 +20,8 @@
 	UNKNOWN VALUES(USER INPUT)
 	
 	DROPDOWN TO SELECT COURSE AND Matching a Grade to it
-		- No validation to drop dwon need 
-		- User input of grades need to be validated	
-											- Check if null or empty
-											- Should be a CHAR
-											- Should be between A and F
+		- No validation to drop down is ued for input 
+		
 		- ALL USER INPUT REQUIRED
 		
 	DATABSE TO STORE STUDENTS
