@@ -73,5 +73,28 @@ namespace CourseEnrolmentSystem
         {
 
         }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            //Rest Dropdown Menu for subjects
+            SubjectDropdownMenuOne.ResetText();
+            SubjectDropdownMenuTwo.ResetText();
+            SubjectDropdownMenuThree.ResetText();
+            SubjectDropdownMenuFour.ResetText();
+            SubjectDropdownMenuFive.ResetText();
+
+
+            //Rest Dropdown Menu for grades
+            GradeDropdownMenuOne.ResetText();
+            GradeDropdownMenuTwo.ResetText();
+            GradeDropdownMenuThree.ResetText();
+            GradeDropdownMenuFour.ResetText();
+            GradeDropdownMenuFive.ResetText();
+        }
+
+        private void CourseEnrolmentSystem_Load(object sender, EventArgs e)
+        {
+            DatabaseDal.GetCourse();
+        }
     }
 }

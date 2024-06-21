@@ -290,6 +290,7 @@
             this.ClearButton.TabIndex = 16;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = false;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // CourseAvailableFlowLayoutPanel
             // 
@@ -316,6 +317,7 @@
             this.Name = "CourseEnrolmentSystem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Course Enrolment System";
+            this.Load += new System.EventHandler(this.CourseEnrolmentSystem_Load);
             this.DropdownMenubackground.ResumeLayout(false);
             this.DropdownMenubackground.PerformLayout();
             this.ResumeLayout(false);

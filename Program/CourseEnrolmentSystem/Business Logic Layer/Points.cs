@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace CourseEnrolmentSystem.Data_Access_Layer
 {
-
     enum GradePoint
     {
         A = 10,
@@ -16,15 +15,12 @@ namespace CourseEnrolmentSystem.Data_Access_Layer
         E = 2,
         F = 0
     }
-
     internal class Points
     {
-
         public static int SubjectPoint(Subject subject)
         {
             int point = 0 ;
             char grade = subject.Grade;
-
             switch (grade)
             {
                 case 'A':
@@ -48,7 +44,6 @@ namespace CourseEnrolmentSystem.Data_Access_Layer
             }
             return point;
         }
-
         public static int CalculatePoints(List<Subject> subjects)
         {
             int totalPoints = 0;

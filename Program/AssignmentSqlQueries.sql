@@ -1,3 +1,16 @@
+select
+    'data source=' + @@servername +
+    ';initial catalog=' + db_name() +
+    case type_desc
+        when 'WINDOWS_LOGIN' 
+            then ';trusted_connection=true'
+        else
+            ';user id=' + suser_name() + ';password=<<YourPassword>>'
+    end
+    as ConnectionString
+from sys.server_principals
+where name = suser_name()
+
 SELECT * FROM Course;
 SELECT * FROM Student;
 
@@ -26,7 +39,7 @@ CREATE TABLE Student(
 --DROP TABLE Student
 
 INSERT INTO Course (Course, MinNumberOfPoints, NumberOfSeats, FulltimeCost, ParttimeCost, Prerequisites, NumberOfAvailableSeats)
-Values ('BSc Computer Science', 40, 10, 25000, 30000, 'Computer Science', 10),
+Values ('BSc Computer Science', 40, 10, 25000, 30000, '["Computer Science"]', 10),
 	   ('BSc Accounting', 35, 20, 25000, 30000, '["Maths", "Accounts"]', 35),
 	   ('BSc Software Engineering', 38, 25, 25000, 30000, '["Computer Science", "Maths"]', 38),
 	   ('BSc Law', 40, 5, 25000, 30000, '["English", "French"]', 40),
