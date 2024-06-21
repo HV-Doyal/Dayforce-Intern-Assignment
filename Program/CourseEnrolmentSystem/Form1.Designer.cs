@@ -1,6 +1,6 @@
 ﻿namespace CourseEnrolmentSystem
 {
-    partial class Form1
+    partial class CourseEnrolmentSystem
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.DropdownMenubackground = new System.Windows.Forms.Panel();
+            this.LabelTitle = new System.Windows.Forms.Label();
             this.LabelGrade = new System.Windows.Forms.Label();
             this.LabelSubject = new System.Windows.Forms.Label();
             this.GradeDropdownMenuFive = new System.Windows.Forms.ComboBox();
@@ -41,10 +42,10 @@
             this.SubjectDropdownMenuTwo = new System.Windows.Forms.ComboBox();
             this.SubjectDropdownMenuFour = new System.Windows.Forms.ComboBox();
             this.SubjectDropdownMenuOne = new System.Windows.Forms.ComboBox();
-            this.LabelTitle = new System.Windows.Forms.Label();
             this.LabelAvailability = new System.Windows.Forms.Label();
-            this.SaveButton = new System.Windows.Forms.Button();
+            this.GetCourseButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
+            this.CourseAvailableFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.DropdownMenubackground.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +71,18 @@
             this.DropdownMenubackground.Size = new System.Drawing.Size(498, 608);
             this.DropdownMenubackground.TabIndex = 0;
             this.DropdownMenubackground.Paint += new System.Windows.Forms.PaintEventHandler(this.DropdownMenubackground_Paint);
+            // 
+            // LabelTitle
+            // 
+            this.LabelTitle.AutoSize = true;
+            this.LabelTitle.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTitle.ForeColor = System.Drawing.Color.White;
+            this.LabelTitle.Location = new System.Drawing.Point(58, 9);
+            this.LabelTitle.Name = "LabelTitle";
+            this.LabelTitle.Size = new System.Drawing.Size(391, 41);
+            this.LabelTitle.TabIndex = 13;
+            this.LabelTitle.Text = "Course Enrolment System";
+            this.LabelTitle.Click += new System.EventHandler(this.LabelTitle_Click);
             // 
             // LabelGrade
             // 
@@ -132,6 +145,7 @@
             this.GradeDropdownMenuOne.Name = "GradeDropdownMenuOne";
             this.GradeDropdownMenuOne.Size = new System.Drawing.Size(176, 40);
             this.GradeDropdownMenuOne.TabIndex = 6;
+            this.GradeDropdownMenuOne.SelectedIndexChanged += new System.EventHandler(this.GradeDropdownMenuOne_SelectedIndexChanged);
             // 
             // SubjectDropdownMenuFive
             // 
@@ -173,18 +187,6 @@
             this.SubjectDropdownMenuOne.Size = new System.Drawing.Size(176, 40);
             this.SubjectDropdownMenuOne.TabIndex = 0;
             // 
-            // LabelTitle
-            // 
-            this.LabelTitle.AutoSize = true;
-            this.LabelTitle.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelTitle.ForeColor = System.Drawing.Color.White;
-            this.LabelTitle.Location = new System.Drawing.Point(58, 9);
-            this.LabelTitle.Name = "LabelTitle";
-            this.LabelTitle.Size = new System.Drawing.Size(391, 41);
-            this.LabelTitle.TabIndex = 13;
-            this.LabelTitle.Text = "Course Enrolment System";
-            this.LabelTitle.Click += new System.EventHandler(this.LabelTitle_Click);
-            // 
             // LabelAvailability
             // 
             this.LabelAvailability.AutoSize = true;
@@ -196,15 +198,16 @@
             this.LabelAvailability.TabIndex = 14;
             this.LabelAvailability.Text = "Available Course";
             // 
-            // SaveButton
+            // GetCourseButton
             // 
-            this.SaveButton.BackColor = System.Drawing.Color.Lime;
-            this.SaveButton.Location = new System.Drawing.Point(652, 521);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(107, 50);
-            this.SaveButton.TabIndex = 15;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = false;
+            this.GetCourseButton.BackColor = System.Drawing.Color.Lime;
+            this.GetCourseButton.Location = new System.Drawing.Point(626, 521);
+            this.GetCourseButton.Name = "GetCourseButton";
+            this.GetCourseButton.Size = new System.Drawing.Size(157, 50);
+            this.GetCourseButton.TabIndex = 15;
+            this.GetCourseButton.Text = "Get Course";
+            this.GetCourseButton.UseVisualStyleBackColor = false;
+            this.GetCourseButton.Click += new System.EventHandler(this.GetCourseButton_Click);
             // 
             // ClearButton
             // 
@@ -216,19 +219,28 @@
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // CourseAvailableFlowLayoutPanel
+            // 
+            this.CourseAvailableFlowLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(40)))), ((int)(((byte)(57)))));
+            this.CourseAvailableFlowLayoutPanel.Location = new System.Drawing.Point(553, 138);
+            this.CourseAvailableFlowLayoutPanel.Name = "CourseAvailableFlowLayoutPanel";
+            this.CourseAvailableFlowLayoutPanel.Size = new System.Drawing.Size(465, 352);
+            this.CourseAvailableFlowLayoutPanel.TabIndex = 0;
+            this.CourseAvailableFlowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CourseAvailableFlowLayoutPanel_Paint);
+            // 
+            // CourseEnrolmentSystem
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(1052, 607);
+            this.ClientSize = new System.Drawing.Size(1063, 601);
+            this.Controls.Add(this.CourseAvailableFlowLayoutPanel);
             this.Controls.Add(this.ClearButton);
-            this.Controls.Add(this.SaveButton);
+            this.Controls.Add(this.GetCourseButton);
             this.Controls.Add(this.LabelAvailability);
             this.Controls.Add(this.DropdownMenubackground);
             this.Cursor = System.Windows.Forms.Cursors.Cross;
             this.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "CourseEnrolmentSystem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Course Enrolment System";
             this.DropdownMenubackground.ResumeLayout(false);
@@ -255,8 +267,9 @@
         private System.Windows.Forms.Label LabelGrade;
         private System.Windows.Forms.Label LabelTitle;
         private System.Windows.Forms.Label LabelAvailability;
-        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button GetCourseButton;
         private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.FlowLayoutPanel CourseAvailableFlowLayoutPanel;
     }
 }
 
