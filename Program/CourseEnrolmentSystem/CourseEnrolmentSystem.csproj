@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="Business Logic Layer\Validation.cs" />
     <Compile Include="Business Logic Layer\ValidationProcessing.cs" />
-    <Compile Include="Data Access Layer\PointCalculation.cs" />
+    <Compile Include="Data Access Layer\Points.cs" />
     <Compile Include="Data Access Layer\Subject.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

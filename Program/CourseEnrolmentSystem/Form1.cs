@@ -37,19 +37,17 @@ namespace CourseEnrolmentSystem
 
         private void GetCourseButton_Click(object sender, EventArgs e)
         {
+            List<Subject> subjects = new List<Subject>();
             //ValidationProcessing.isDropdownEmpty(SubjectDropdownMenuOne.Text, "1st Subject");
             try
             {
-                Subject subjectOne = new Subject(SubjectDropdownMenuOne.Text, Convert.ToChar(GradeDropdownMenuOne.Text));
-                Subject subjectTwo = new Subject(SubjectDropdownMenuTwo.Text, Convert.ToChar(GradeDropdownMenuTwo.Text));
-                Subject subjectThree = new Subject(SubjectDropdownMenuThree.Text, Convert.ToChar(GradeDropdownMenuThree.Text));
-                Subject subjectFour = new Subject(SubjectDropdownMenuFour.Text, Convert.ToChar(GradeDropdownMenuFour.Text));
-                Subject subjectFive = new Subject(SubjectDropdownMenuFive.Text, Convert.ToChar(GradeDropdownMenuFive.Text));
+                subjects.Add(new Subject(SubjectDropdownMenuOne.Text, Convert.ToChar(GradeDropdownMenuOne.Text)));
+                subjects.Add(new Subject(SubjectDropdownMenuTwo.Text, Convert.ToChar(GradeDropdownMenuTwo.Text)));
+                subjects.Add(new Subject(SubjectDropdownMenuThree.Text, Convert.ToChar(GradeDropdownMenuThree.Text)));
+                subjects.Add(new Subject(SubjectDropdownMenuFour.Text, Convert.ToChar(GradeDropdownMenuFour.Text)));
+                subjects.Add(new Subject(SubjectDropdownMenuFive.Text, Convert.ToChar(GradeDropdownMenuFive.Text)));
 
-
-                MessageBox.Show($"isWorking? \n {subjectOne.Name}, {subjectOne.Grade} \n {subjectTwo.Name}, {subjectTwo.Grade}" +
-                    $"\n{subjectThree.Name}, {subjectThree.Grade} \n {subjectFour.Name}, {subjectFour.Grade}" +
-                    $"\n{subjectFive.Name}, {subjectFive.Grade}", "Testing");
+                MessageBox.Show($"{Points.CalculatePoints(subjects)}");
             }
             catch (Exception ex)
             {
