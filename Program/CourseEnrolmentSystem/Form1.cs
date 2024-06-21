@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Assignment.Business_Layer;
+using CourseEnrolmentSystem.Business_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,7 +36,8 @@ namespace CourseEnrolmentSystem
 
         private void GetCourseButton_Click(object sender, EventArgs e)
         {
-
+            ValidationProcessing.isDropdownEmpty(SubjectDropdownMenuOne.Text, "1st Subject");
+            //MessageBox.Show($"Worked {SubjectDropdownMenuOne.Text}", "Test");
         }
 
         private void CourseAvailableFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
@@ -44,6 +47,16 @@ namespace CourseEnrolmentSystem
         private void LoadCourses()
         {
             
+        }
+
+        private void SubjectDropdownMenuOne_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void LabelAvailability_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

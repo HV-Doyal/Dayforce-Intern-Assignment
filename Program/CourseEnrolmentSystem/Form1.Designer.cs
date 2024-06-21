@@ -109,6 +109,13 @@
             // GradeDropdownMenuFive
             // 
             this.GradeDropdownMenuFive.FormattingEnabled = true;
+            this.GradeDropdownMenuFive.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"});
             this.GradeDropdownMenuFive.Location = new System.Drawing.Point(273, 531);
             this.GradeDropdownMenuFive.Name = "GradeDropdownMenuFive";
             this.GradeDropdownMenuFive.Size = new System.Drawing.Size(176, 40);
@@ -117,6 +124,13 @@
             // GradeDropdownMenuThree
             // 
             this.GradeDropdownMenuThree.FormattingEnabled = true;
+            this.GradeDropdownMenuThree.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"});
             this.GradeDropdownMenuThree.Location = new System.Drawing.Point(273, 347);
             this.GradeDropdownMenuThree.Name = "GradeDropdownMenuThree";
             this.GradeDropdownMenuThree.Size = new System.Drawing.Size(176, 40);
@@ -125,6 +139,13 @@
             // GradeDropdownMenuTwo
             // 
             this.GradeDropdownMenuTwo.FormattingEnabled = true;
+            this.GradeDropdownMenuTwo.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"});
             this.GradeDropdownMenuTwo.Location = new System.Drawing.Point(273, 255);
             this.GradeDropdownMenuTwo.Name = "GradeDropdownMenuTwo";
             this.GradeDropdownMenuTwo.Size = new System.Drawing.Size(176, 40);
@@ -133,6 +154,13 @@
             // GradeDropdownMenuFour
             // 
             this.GradeDropdownMenuFour.FormattingEnabled = true;
+            this.GradeDropdownMenuFour.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"});
             this.GradeDropdownMenuFour.Location = new System.Drawing.Point(273, 439);
             this.GradeDropdownMenuFour.Name = "GradeDropdownMenuFour";
             this.GradeDropdownMenuFour.Size = new System.Drawing.Size(176, 40);
@@ -141,6 +169,13 @@
             // GradeDropdownMenuOne
             // 
             this.GradeDropdownMenuOne.FormattingEnabled = true;
+            this.GradeDropdownMenuOne.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"});
             this.GradeDropdownMenuOne.Location = new System.Drawing.Point(273, 163);
             this.GradeDropdownMenuOne.Name = "GradeDropdownMenuOne";
             this.GradeDropdownMenuOne.Size = new System.Drawing.Size(176, 40);
@@ -150,6 +185,13 @@
             // SubjectDropdownMenuFive
             // 
             this.SubjectDropdownMenuFive.FormattingEnabled = true;
+            this.SubjectDropdownMenuFive.Items.AddRange(new object[] {
+            "Computer Science",
+            "Maths",
+            "English",
+            "French",
+            "Accounts",
+            "Physics"});
             this.SubjectDropdownMenuFive.Location = new System.Drawing.Point(21, 531);
             this.SubjectDropdownMenuFive.Name = "SubjectDropdownMenuFive";
             this.SubjectDropdownMenuFive.Size = new System.Drawing.Size(176, 40);
@@ -158,6 +200,13 @@
             // SubjectDropdownMenuThree
             // 
             this.SubjectDropdownMenuThree.FormattingEnabled = true;
+            this.SubjectDropdownMenuThree.Items.AddRange(new object[] {
+            "Computer Science",
+            "Maths",
+            "English",
+            "French",
+            "Accounts",
+            "Physics"});
             this.SubjectDropdownMenuThree.Location = new System.Drawing.Point(21, 347);
             this.SubjectDropdownMenuThree.Name = "SubjectDropdownMenuThree";
             this.SubjectDropdownMenuThree.Size = new System.Drawing.Size(176, 40);
@@ -166,6 +215,13 @@
             // SubjectDropdownMenuTwo
             // 
             this.SubjectDropdownMenuTwo.FormattingEnabled = true;
+            this.SubjectDropdownMenuTwo.Items.AddRange(new object[] {
+            "Computer Science",
+            "Maths",
+            "English",
+            "French",
+            "Accounts",
+            "Physics"});
             this.SubjectDropdownMenuTwo.Location = new System.Drawing.Point(21, 255);
             this.SubjectDropdownMenuTwo.Name = "SubjectDropdownMenuTwo";
             this.SubjectDropdownMenuTwo.Size = new System.Drawing.Size(176, 40);
@@ -174,6 +230,13 @@
             // SubjectDropdownMenuFour
             // 
             this.SubjectDropdownMenuFour.FormattingEnabled = true;
+            this.SubjectDropdownMenuFour.Items.AddRange(new object[] {
+            "Computer Science",
+            "Maths",
+            "English",
+            "French",
+            "Accounts",
+            "Physics"});
             this.SubjectDropdownMenuFour.Location = new System.Drawing.Point(21, 439);
             this.SubjectDropdownMenuFour.Name = "SubjectDropdownMenuFour";
             this.SubjectDropdownMenuFour.Size = new System.Drawing.Size(176, 40);
@@ -182,21 +245,30 @@
             // SubjectDropdownMenuOne
             // 
             this.SubjectDropdownMenuOne.FormattingEnabled = true;
+            this.SubjectDropdownMenuOne.Items.AddRange(new object[] {
+            "Computer Science",
+            "Maths",
+            "English",
+            "French",
+            "Accounts",
+            "Physics"});
             this.SubjectDropdownMenuOne.Location = new System.Drawing.Point(21, 163);
             this.SubjectDropdownMenuOne.Name = "SubjectDropdownMenuOne";
             this.SubjectDropdownMenuOne.Size = new System.Drawing.Size(176, 40);
             this.SubjectDropdownMenuOne.TabIndex = 0;
+            this.SubjectDropdownMenuOne.SelectedIndexChanged += new System.EventHandler(this.SubjectDropdownMenuOne_SelectedIndexChanged);
             // 
             // LabelAvailability
             // 
             this.LabelAvailability.AutoSize = true;
             this.LabelAvailability.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelAvailability.ForeColor = System.Drawing.Color.White;
-            this.LabelAvailability.Location = new System.Drawing.Point(645, 64);
+            this.LabelAvailability.Location = new System.Drawing.Point(666, 62);
             this.LabelAvailability.Name = "LabelAvailability";
             this.LabelAvailability.Size = new System.Drawing.Size(258, 41);
             this.LabelAvailability.TabIndex = 14;
             this.LabelAvailability.Text = "Available Course";
+            this.LabelAvailability.Click += new System.EventHandler(this.LabelAvailability_Click);
             // 
             // GetCourseButton
             // 
@@ -240,6 +312,7 @@
             this.Controls.Add(this.DropdownMenubackground);
             this.Cursor = System.Windows.Forms.Cursors.Cross;
             this.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "CourseEnrolmentSystem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Course Enrolment System";
