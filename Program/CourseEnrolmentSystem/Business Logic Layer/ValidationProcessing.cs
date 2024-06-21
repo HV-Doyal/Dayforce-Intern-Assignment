@@ -11,12 +11,13 @@ namespace CourseEnrolmentSystem.Business_Layer
 {
     internal class ValidationProcessing
     {
+        //not using, try and catch worked better REMOVE BEFORE SUBMISSION
         public static string isDropdownEmpty(string subject, string fieldName)
         {
             if (Validation.isNullOrEmpty(subject))
             {
                 MessageBox.Show($"The field {fieldName} should not be empty", "Error");
-                return "-1"; ;
+                return subject;
             }
             else
             {
