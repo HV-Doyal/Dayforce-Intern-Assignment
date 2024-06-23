@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\data access layer\\databasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:data access layer\\databasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\business logic layer\\courseavailable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\courseavailable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\business logic layer\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\data access layer\\databasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:data access layer\\databasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\business logic layer\\validationprocessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\validationprocessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\business logic layer\\points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -27,12 +31,12 @@
       "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\business logic layer\\points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\business logic layer\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\p12ba18\\onedrive - ceridian hcm inc\\desktop\\dayforce\\assignment\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\business logic layer\\validationprocessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\validationprocessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,32 +59,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CourseAvailable.cs",
+              "DocumentMoniker": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\CourseAvailable.cs",
+              "RelativeDocumentMoniker": "Business Logic Layer\\CourseAvailable.cs",
+              "ToolTip": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\CourseAvailable.cs",
+              "RelativeToolTip": "Business Logic Layer\\CourseAvailable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T12:31:05.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DatabaseDal.cs",
               "DocumentMoniker": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Data Access Layer\\DatabaseDal.cs",
               "RelativeDocumentMoniker": "Data Access Layer\\DatabaseDal.cs",
               "ToolTip": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Data Access Layer\\DatabaseDal.cs",
               "RelativeToolTip": "Data Access Layer\\DatabaseDal.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCIAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T09:49:13.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Points.cs",
               "DocumentMoniker": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\Points.cs",
               "RelativeDocumentMoniker": "Business Logic Layer\\Points.cs",
               "ToolTip": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\Points.cs",
               "RelativeToolTip": "Business Logic Layer\\Points.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA3AAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwDMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T07:03:51.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Subject.cs",
               "DocumentMoniker": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Models\\Subject.cs",
               "RelativeDocumentMoniker": "Models\\Subject.cs",
@@ -93,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
@@ -105,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -117,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Validation.cs",
               "DocumentMoniker": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\Validation.cs",
               "RelativeDocumentMoniker": "Business Logic Layer\\Validation.cs",
@@ -130,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "ValidationProcessing.cs",
               "DocumentMoniker": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\ValidationProcessing.cs",
               "RelativeDocumentMoniker": "Business Logic Layer\\ValidationProcessing.cs",
@@ -149,7 +166,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAD4vzEAAAAQAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwGkAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T05:38:34.977Z",
               "EditorCaption": ""

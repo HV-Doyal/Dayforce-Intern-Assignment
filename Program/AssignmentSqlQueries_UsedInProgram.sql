@@ -1,0 +1,1 @@
+Select * From Course Where (NumberOfSeats > 0) AND (MinNumberOfPoints >= 38) AND (Prerequisites = 'Computer Science');

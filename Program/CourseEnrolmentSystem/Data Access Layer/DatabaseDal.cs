@@ -12,10 +12,10 @@ namespace CourseEnrolmentSystem.Data_Access_Layer
     internal class DatabaseDal
     {
         private static readonly string _connectionString = @"data source=DayforcefMibEuW;initial catalog=master;trusted_connection=true";
-        public static List<string> GetCourse()
+        public static List<string> GetCourse(int points)
         {
             List<string> courseAvailable = new List<string>();
-            string query = "Select Course from Course";
+            string query = $"Select * From Course Where (NumberOfSeats > 0) AND (MinNumberOfPoints <= {points})";
             try
             {
                 // Creating Connection  

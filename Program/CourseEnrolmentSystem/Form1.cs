@@ -48,11 +48,20 @@ namespace CourseEnrolmentSystem
                 subjects.Add(new Subject(SubjectDropdownMenuFive.Text, Convert.ToChar(GradeDropdownMenuFive.Text)));
 
                 MessageBox.Show($"{Points.CalculatePoints(subjects)}");
+                //DatabaseDal.GetCourse(Points.CalculatePoints(subjects));
+                //TESTING
+                List<string> courseAvailable = DatabaseDal.GetCourse(Points.CalculatePoints(subjects));
+
+                foreach (string course in courseAvailable)
+                {
+                    MessageBox.Show(course, "Tesing");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Incorrect inputs!!! \nCheck Subject and Grades Properly \nAll input required \n{ex.Message}", "Error");
-            }                                   
+            }      
+            
         }
 
         private void CourseAvailableFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
@@ -94,7 +103,7 @@ namespace CourseEnrolmentSystem
 
         private void CourseEnrolmentSystem_Load(object sender, EventArgs e)
         {
-            DatabaseDal.GetCourse();
+       
         }
     }
 }
