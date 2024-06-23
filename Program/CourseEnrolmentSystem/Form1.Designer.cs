@@ -46,7 +46,9 @@
             this.GetCourseButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.CourseAvailableFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.CoursesListBox = new System.Windows.Forms.ListBox();
             this.DropdownMenubackground.SuspendLayout();
+            this.CourseAvailableFlowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // DropdownMenubackground
@@ -79,7 +81,7 @@
             this.LabelTitle.ForeColor = System.Drawing.Color.White;
             this.LabelTitle.Location = new System.Drawing.Point(58, 9);
             this.LabelTitle.Name = "LabelTitle";
-            this.LabelTitle.Size = new System.Drawing.Size(391, 41);
+            this.LabelTitle.Size = new System.Drawing.Size(313, 35);
             this.LabelTitle.TabIndex = 13;
             this.LabelTitle.Text = "Course Enrolment System";
             this.LabelTitle.Click += new System.EventHandler(this.LabelTitle_Click);
@@ -91,7 +93,7 @@
             this.LabelGrade.ForeColor = System.Drawing.Color.White;
             this.LabelGrade.Location = new System.Drawing.Point(299, 89);
             this.LabelGrade.Name = "LabelGrade";
-            this.LabelGrade.Size = new System.Drawing.Size(104, 41);
+            this.LabelGrade.Size = new System.Drawing.Size(83, 35);
             this.LabelGrade.TabIndex = 12;
             this.LabelGrade.Text = "Grade";
             // 
@@ -102,7 +104,7 @@
             this.LabelSubject.ForeColor = System.Drawing.Color.White;
             this.LabelSubject.Location = new System.Drawing.Point(44, 89);
             this.LabelSubject.Name = "LabelSubject";
-            this.LabelSubject.Size = new System.Drawing.Size(131, 41);
+            this.LabelSubject.Size = new System.Drawing.Size(104, 35);
             this.LabelSubject.TabIndex = 11;
             this.LabelSubject.Text = "Subject";
             // 
@@ -118,7 +120,7 @@
             "F"});
             this.GradeDropdownMenuFive.Location = new System.Drawing.Point(273, 531);
             this.GradeDropdownMenuFive.Name = "GradeDropdownMenuFive";
-            this.GradeDropdownMenuFive.Size = new System.Drawing.Size(176, 40);
+            this.GradeDropdownMenuFive.Size = new System.Drawing.Size(176, 33);
             this.GradeDropdownMenuFive.TabIndex = 10;
             // 
             // GradeDropdownMenuThree
@@ -133,7 +135,7 @@
             "F"});
             this.GradeDropdownMenuThree.Location = new System.Drawing.Point(273, 347);
             this.GradeDropdownMenuThree.Name = "GradeDropdownMenuThree";
-            this.GradeDropdownMenuThree.Size = new System.Drawing.Size(176, 40);
+            this.GradeDropdownMenuThree.Size = new System.Drawing.Size(176, 33);
             this.GradeDropdownMenuThree.TabIndex = 9;
             // 
             // GradeDropdownMenuTwo
@@ -148,7 +150,7 @@
             "F"});
             this.GradeDropdownMenuTwo.Location = new System.Drawing.Point(273, 255);
             this.GradeDropdownMenuTwo.Name = "GradeDropdownMenuTwo";
-            this.GradeDropdownMenuTwo.Size = new System.Drawing.Size(176, 40);
+            this.GradeDropdownMenuTwo.Size = new System.Drawing.Size(176, 33);
             this.GradeDropdownMenuTwo.TabIndex = 8;
             // 
             // GradeDropdownMenuFour
@@ -163,7 +165,7 @@
             "F"});
             this.GradeDropdownMenuFour.Location = new System.Drawing.Point(273, 439);
             this.GradeDropdownMenuFour.Name = "GradeDropdownMenuFour";
-            this.GradeDropdownMenuFour.Size = new System.Drawing.Size(176, 40);
+            this.GradeDropdownMenuFour.Size = new System.Drawing.Size(176, 33);
             this.GradeDropdownMenuFour.TabIndex = 7;
             // 
             // GradeDropdownMenuOne
@@ -178,7 +180,7 @@
             "F"});
             this.GradeDropdownMenuOne.Location = new System.Drawing.Point(273, 163);
             this.GradeDropdownMenuOne.Name = "GradeDropdownMenuOne";
-            this.GradeDropdownMenuOne.Size = new System.Drawing.Size(176, 40);
+            this.GradeDropdownMenuOne.Size = new System.Drawing.Size(176, 33);
             this.GradeDropdownMenuOne.TabIndex = 6;
             this.GradeDropdownMenuOne.SelectedIndexChanged += new System.EventHandler(this.GradeDropdownMenuOne_SelectedIndexChanged);
             // 
@@ -194,7 +196,7 @@
             "Physics"});
             this.SubjectDropdownMenuFive.Location = new System.Drawing.Point(21, 531);
             this.SubjectDropdownMenuFive.Name = "SubjectDropdownMenuFive";
-            this.SubjectDropdownMenuFive.Size = new System.Drawing.Size(176, 40);
+            this.SubjectDropdownMenuFive.Size = new System.Drawing.Size(176, 33);
             this.SubjectDropdownMenuFive.TabIndex = 5;
             // 
             // SubjectDropdownMenuThree
@@ -209,7 +211,7 @@
             "Physics"});
             this.SubjectDropdownMenuThree.Location = new System.Drawing.Point(21, 347);
             this.SubjectDropdownMenuThree.Name = "SubjectDropdownMenuThree";
-            this.SubjectDropdownMenuThree.Size = new System.Drawing.Size(176, 40);
+            this.SubjectDropdownMenuThree.Size = new System.Drawing.Size(176, 33);
             this.SubjectDropdownMenuThree.TabIndex = 4;
             // 
             // SubjectDropdownMenuTwo
@@ -224,7 +226,7 @@
             "Physics"});
             this.SubjectDropdownMenuTwo.Location = new System.Drawing.Point(21, 255);
             this.SubjectDropdownMenuTwo.Name = "SubjectDropdownMenuTwo";
-            this.SubjectDropdownMenuTwo.Size = new System.Drawing.Size(176, 40);
+            this.SubjectDropdownMenuTwo.Size = new System.Drawing.Size(176, 33);
             this.SubjectDropdownMenuTwo.TabIndex = 2;
             // 
             // SubjectDropdownMenuFour
@@ -239,7 +241,7 @@
             "Physics"});
             this.SubjectDropdownMenuFour.Location = new System.Drawing.Point(21, 439);
             this.SubjectDropdownMenuFour.Name = "SubjectDropdownMenuFour";
-            this.SubjectDropdownMenuFour.Size = new System.Drawing.Size(176, 40);
+            this.SubjectDropdownMenuFour.Size = new System.Drawing.Size(176, 33);
             this.SubjectDropdownMenuFour.TabIndex = 1;
             // 
             // SubjectDropdownMenuOne
@@ -254,7 +256,7 @@
             "Physics"});
             this.SubjectDropdownMenuOne.Location = new System.Drawing.Point(21, 163);
             this.SubjectDropdownMenuOne.Name = "SubjectDropdownMenuOne";
-            this.SubjectDropdownMenuOne.Size = new System.Drawing.Size(176, 40);
+            this.SubjectDropdownMenuOne.Size = new System.Drawing.Size(176, 33);
             this.SubjectDropdownMenuOne.TabIndex = 0;
             this.SubjectDropdownMenuOne.SelectedIndexChanged += new System.EventHandler(this.SubjectDropdownMenuOne_SelectedIndexChanged);
             // 
@@ -265,7 +267,7 @@
             this.LabelAvailability.ForeColor = System.Drawing.Color.White;
             this.LabelAvailability.Location = new System.Drawing.Point(666, 62);
             this.LabelAvailability.Name = "LabelAvailability";
-            this.LabelAvailability.Size = new System.Drawing.Size(258, 41);
+            this.LabelAvailability.Size = new System.Drawing.Size(206, 35);
             this.LabelAvailability.TabIndex = 14;
             this.LabelAvailability.Text = "Available Course";
             this.LabelAvailability.Click += new System.EventHandler(this.LabelAvailability_Click);
@@ -295,11 +297,26 @@
             // CourseAvailableFlowLayoutPanel
             // 
             this.CourseAvailableFlowLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(40)))), ((int)(((byte)(57)))));
+            this.CourseAvailableFlowLayoutPanel.Controls.Add(this.CoursesListBox);
             this.CourseAvailableFlowLayoutPanel.Location = new System.Drawing.Point(553, 138);
             this.CourseAvailableFlowLayoutPanel.Name = "CourseAvailableFlowLayoutPanel";
             this.CourseAvailableFlowLayoutPanel.Size = new System.Drawing.Size(465, 352);
             this.CourseAvailableFlowLayoutPanel.TabIndex = 0;
             this.CourseAvailableFlowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CourseAvailableFlowLayoutPanel_Paint);
+            // 
+            // CoursesListBox
+            // 
+            this.CoursesListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(40)))), ((int)(((byte)(57)))));
+            this.CoursesListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CoursesListBox.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoursesListBox.ForeColor = System.Drawing.Color.White;
+            this.CoursesListBox.FormattingEnabled = true;
+            this.CoursesListBox.ItemHeight = 27;
+            this.CoursesListBox.Location = new System.Drawing.Point(3, 3);
+            this.CoursesListBox.Name = "CoursesListBox";
+            this.CoursesListBox.Size = new System.Drawing.Size(462, 351);
+            this.CoursesListBox.TabIndex = 0;
+            this.CoursesListBox.SelectedIndexChanged += new System.EventHandler(this.CoursesListBox_SelectedIndexChanged_1);
             // 
             // CourseEnrolmentSystem
             // 
@@ -320,6 +337,7 @@
             this.Load += new System.EventHandler(this.CourseEnrolmentSystem_Load);
             this.DropdownMenubackground.ResumeLayout(false);
             this.DropdownMenubackground.PerformLayout();
+            this.CourseAvailableFlowLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,6 +363,7 @@
         private System.Windows.Forms.Button GetCourseButton;
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.FlowLayoutPanel CourseAvailableFlowLayoutPanel;
+        private System.Windows.Forms.ListBox CoursesListBox;
     }
 }
 

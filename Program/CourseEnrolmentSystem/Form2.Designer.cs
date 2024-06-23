@@ -57,7 +57,7 @@
             this.RegistrationLabel.Location = new System.Drawing.Point(474, 20);
             this.RegistrationLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.RegistrationLabel.Name = "RegistrationLabel";
-            this.RegistrationLabel.Size = new System.Drawing.Size(219, 48);
+            this.RegistrationLabel.Size = new System.Drawing.Size(174, 38);
             this.RegistrationLabel.TabIndex = 1;
             this.RegistrationLabel.Text = "Registration";
             // 
@@ -68,7 +68,7 @@
             this.FirstNameLabel.Location = new System.Drawing.Point(49, 107);
             this.FirstNameLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.FirstNameLabel.Name = "FirstNameLabel";
-            this.FirstNameLabel.Size = new System.Drawing.Size(140, 32);
+            this.FirstNameLabel.Size = new System.Drawing.Size(116, 27);
             this.FirstNameLabel.TabIndex = 2;
             this.FirstNameLabel.Text = "First Name";
             // 
@@ -79,7 +79,7 @@
             this.LastNameLabel.Location = new System.Drawing.Point(595, 110);
             this.LastNameLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LastNameLabel.Name = "LastNameLabel";
-            this.LastNameLabel.Size = new System.Drawing.Size(135, 32);
+            this.LastNameLabel.Size = new System.Drawing.Size(111, 27);
             this.LastNameLabel.TabIndex = 3;
             this.LastNameLabel.Text = "Last Name";
             // 
@@ -90,7 +90,7 @@
             this.EmailLabel.Location = new System.Drawing.Point(49, 199);
             this.EmailLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(71, 32);
+            this.EmailLabel.Size = new System.Drawing.Size(60, 27);
             this.EmailLabel.TabIndex = 4;
             this.EmailLabel.Text = "Email";
             // 
@@ -101,7 +101,7 @@
             this.ContactNumberLabel.Location = new System.Drawing.Point(595, 210);
             this.ContactNumberLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.ContactNumberLabel.Name = "ContactNumberLabel";
-            this.ContactNumberLabel.Size = new System.Drawing.Size(196, 32);
+            this.ContactNumberLabel.Size = new System.Drawing.Size(162, 27);
             this.ContactNumberLabel.TabIndex = 5;
             this.ContactNumberLabel.Text = "Contact Number";
             // 
@@ -112,7 +112,7 @@
             this.CourseLabel.Location = new System.Drawing.Point(49, 374);
             this.CourseLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.CourseLabel.Name = "CourseLabel";
-            this.CourseLabel.Size = new System.Drawing.Size(87, 32);
+            this.CourseLabel.Size = new System.Drawing.Size(73, 27);
             this.CourseLabel.TabIndex = 6;
             this.CourseLabel.Text = "Course";
             // 
@@ -123,7 +123,7 @@
             this.FeesLabel.Location = new System.Drawing.Point(665, 371);
             this.FeesLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.FeesLabel.Name = "FeesLabel";
-            this.FeesLabel.Size = new System.Drawing.Size(65, 32);
+            this.FeesLabel.Size = new System.Drawing.Size(55, 27);
             this.FeesLabel.TabIndex = 7;
             this.FeesLabel.Text = "Fees";
             // 
@@ -134,7 +134,7 @@
             this.AddressLabel.Location = new System.Drawing.Point(49, 299);
             this.AddressLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.AddressLabel.Name = "AddressLabel";
-            this.AddressLabel.Size = new System.Drawing.Size(105, 32);
+            this.AddressLabel.Size = new System.Drawing.Size(86, 27);
             this.AddressLabel.TabIndex = 8;
             this.AddressLabel.Text = "Address";
             // 
@@ -144,7 +144,7 @@
             this.IsFulltimeCheckBox.ForeColor = System.Drawing.Color.White;
             this.IsFulltimeCheckBox.Location = new System.Drawing.Point(55, 448);
             this.IsFulltimeCheckBox.Name = "IsFulltimeCheckBox";
-            this.IsFulltimeCheckBox.Size = new System.Drawing.Size(156, 36);
+            this.IsFulltimeCheckBox.Size = new System.Drawing.Size(130, 31);
             this.IsFulltimeCheckBox.TabIndex = 9;
             this.IsFulltimeCheckBox.Text = "Is Fulltime";
             this.IsFulltimeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -154,49 +154,49 @@
             // 
             this.FirstNameTextBox.Location = new System.Drawing.Point(213, 107);
             this.FirstNameTextBox.Name = "FirstNameTextBox";
-            this.FirstNameTextBox.Size = new System.Drawing.Size(345, 40);
+            this.FirstNameTextBox.Size = new System.Drawing.Size(345, 33);
             this.FirstNameTextBox.TabIndex = 10;
             // 
             // CourseTextBox
             // 
             this.CourseTextBox.Location = new System.Drawing.Point(213, 366);
             this.CourseTextBox.Name = "CourseTextBox";
-            this.CourseTextBox.Size = new System.Drawing.Size(345, 40);
+            this.CourseTextBox.Size = new System.Drawing.Size(345, 33);
             this.CourseTextBox.TabIndex = 11;
             // 
             // LastNameTextBox
             // 
             this.LastNameTextBox.Location = new System.Drawing.Point(817, 113);
             this.LastNameTextBox.Name = "LastNameTextBox";
-            this.LastNameTextBox.Size = new System.Drawing.Size(345, 40);
+            this.LastNameTextBox.Size = new System.Drawing.Size(345, 33);
             this.LastNameTextBox.TabIndex = 12;
             // 
             // ContactNumberTextBox
             // 
             this.ContactNumberTextBox.Location = new System.Drawing.Point(817, 202);
             this.ContactNumberTextBox.Name = "ContactNumberTextBox";
-            this.ContactNumberTextBox.Size = new System.Drawing.Size(345, 40);
+            this.ContactNumberTextBox.Size = new System.Drawing.Size(345, 33);
             this.ContactNumberTextBox.TabIndex = 13;
             // 
             // AddressTextBox
             // 
             this.AddressTextBox.Location = new System.Drawing.Point(213, 291);
             this.AddressTextBox.Name = "AddressTextBox";
-            this.AddressTextBox.Size = new System.Drawing.Size(345, 40);
+            this.AddressTextBox.Size = new System.Drawing.Size(345, 33);
             this.AddressTextBox.TabIndex = 14;
             // 
             // FeesTextBox
             // 
             this.FeesTextBox.Location = new System.Drawing.Point(817, 371);
             this.FeesTextBox.Name = "FeesTextBox";
-            this.FeesTextBox.Size = new System.Drawing.Size(345, 40);
+            this.FeesTextBox.Size = new System.Drawing.Size(345, 33);
             this.FeesTextBox.TabIndex = 15;
             // 
             // EmailTextBox
             // 
             this.EmailTextBox.Location = new System.Drawing.Point(213, 199);
             this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(345, 40);
+            this.EmailTextBox.Size = new System.Drawing.Size(345, 33);
             this.EmailTextBox.TabIndex = 16;
             // 
             // RegisterButton
@@ -231,7 +231,7 @@
             // 
             // CourseEnrolmentSystemTwo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(1198, 568);
@@ -258,6 +258,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "CourseEnrolmentSystemTwo";
             this.Text = "Course Enrolment System";
+            this.Load += new System.EventHandler(this.CourseEnrolmentSystemTwo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

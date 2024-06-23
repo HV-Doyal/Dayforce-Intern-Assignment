@@ -16,5 +16,10 @@ namespace CourseEnrolmentSystem
         {
             InitializeComponent();
         }
+
+        private void CourseEnrolmentSystemTwo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

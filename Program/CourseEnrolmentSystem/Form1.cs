@@ -1,5 +1,6 @@
 ﻿using Assignment.Business_Layer;
 using CourseEnrolmentSystem.Business_Layer;
+using CourseEnrolmentSystem.Business_Logic_Layer;
 using CourseEnrolmentSystem.Data_Access_Layer;
 using System;
 using System.Collections.Generic;
@@ -37,31 +38,12 @@ namespace CourseEnrolmentSystem
 
         private void GetCourseButton_Click(object sender, EventArgs e)
         {
-            List<Subject> subjects = new List<Subject>();
-            //ValidationProcessing.isDropdownEmpty(SubjectDropdownMenuOne.Text, "1st Subject");
-            try
-            {
-                subjects.Add(new Subject(SubjectDropdownMenuOne.Text, Convert.ToChar(GradeDropdownMenuOne.Text)));
-                subjects.Add(new Subject(SubjectDropdownMenuTwo.Text, Convert.ToChar(GradeDropdownMenuTwo.Text)));
-                subjects.Add(new Subject(SubjectDropdownMenuThree.Text, Convert.ToChar(GradeDropdownMenuThree.Text)));
-                subjects.Add(new Subject(SubjectDropdownMenuFour.Text, Convert.ToChar(GradeDropdownMenuFour.Text)));
-                subjects.Add(new Subject(SubjectDropdownMenuFive.Text, Convert.ToChar(GradeDropdownMenuFive.Text)));
-
-                MessageBox.Show($"{Points.CalculatePoints(subjects)}");
-                //DatabaseDal.GetCourse(Points.CalculatePoints(subjects));
-                //TESTING
-                List<string> courseAvailable = DatabaseDal.GetCourse(Points.CalculatePoints(subjects));
-
-                foreach (string course in courseAvailable)
-                {
-                    MessageBox.Show(course, "Tesing");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Incorrect inputs!!! \nCheck Subject and Grades Properly \nAll input required \n{ex.Message}", "Error");
-            }      
-            
+            UiFunction.GetCourses(this, SubjectDropdownMenuOne, GradeDropdownMenuOne,
+                                   SubjectDropdownMenuTwo, GradeDropdownMenuTwo,
+                                   SubjectDropdownMenuThree, GradeDropdownMenuThree,
+                                   SubjectDropdownMenuFour, GradeDropdownMenuFour,
+                                   SubjectDropdownMenuFive, GradeDropdownMenuFive,
+                                   CoursesListBox);
         }
 
         private void CourseAvailableFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
@@ -104,6 +86,21 @@ namespace CourseEnrolmentSystem
         private void CourseEnrolmentSystem_Load(object sender, EventArgs e)
         {
        
+        }
+
+        private void CourseAvailable_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void coursesListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CoursesListBox_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
