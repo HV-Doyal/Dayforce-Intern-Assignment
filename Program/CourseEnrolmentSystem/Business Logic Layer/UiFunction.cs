@@ -10,6 +10,7 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
 {
     internal class UiFunction
     {
+        public static List<Subject> subjects = new List<Subject>();
         public static void GetCourses(Form form, ComboBox subjectDropdownMenuOne, ComboBox gradeDropdownMenuOne,
                               ComboBox subjectDropdownMenuTwo, ComboBox gradeDropdownMenuTwo,
                               ComboBox subjectDropdownMenuThree, ComboBox gradeDropdownMenuThree,
@@ -17,7 +18,6 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
                               ComboBox subjectDropdownMenuFive, ComboBox gradeDropdownMenuFive,
                               ListBox CoursesListBox)
         {
-            List<Subject> subjects = new List<Subject>();
             try
             {
                 subjects.Add(new Subject(subjectDropdownMenuOne.Text, Convert.ToChar(gradeDropdownMenuOne.Text)));
@@ -34,12 +34,19 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
                 foreach (string course in courseAvailable)
                 {
                     CoursesListBox.Items.Add(course);
+
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Incorrect inputs!!! \nCheck Subject and Grades Properly \nAll input required \n{ex.Message}", "Error");
             }
+        }
+
+        public static int TotalPoints()
+        {
+            int totalPoints = Points.CalculatePoints(subjects);
+            return totalPoints;
         }
     }
 }

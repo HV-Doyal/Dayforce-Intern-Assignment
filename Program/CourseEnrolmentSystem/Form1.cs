@@ -67,20 +67,19 @@ namespace CourseEnrolmentSystem
 
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            //Rest Dropdown Menu for subjects
             SubjectDropdownMenuOne.ResetText();
             SubjectDropdownMenuTwo.ResetText();
             SubjectDropdownMenuThree.ResetText();
             SubjectDropdownMenuFour.ResetText();
             SubjectDropdownMenuFive.ResetText();
 
-
-            //Rest Dropdown Menu for grades
             GradeDropdownMenuOne.ResetText();
             GradeDropdownMenuTwo.ResetText();
             GradeDropdownMenuThree.ResetText();
             GradeDropdownMenuFour.ResetText();
             GradeDropdownMenuFive.ResetText();
+
+            CoursesListBox.Items.Clear();
         }
 
         private void CourseEnrolmentSystem_Load(object sender, EventArgs e)
@@ -101,6 +100,13 @@ namespace CourseEnrolmentSystem
         private void CoursesListBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void RegisterButton_Click(object sender, EventArgs e)
+        {
+            CourseEnrolmentSystemTwo courseEnrolmentSystemTwo = new CourseEnrolmentSystemTwo();
+            courseEnrolmentSystemTwo.Show();
+            this.Hide();
         }
     }
 }
