@@ -11,18 +11,18 @@ namespace CourseEnrolmentSystem.Business_Layer
 {
     internal class ValidationProcessing
     {
-        //not using, try and catch worked better REMOVE BEFORE SUBMISSION
-        public static string isDropdownEmpty(string subject, string fieldName)
+        public static void ValidateSubjectDropdown(ComboBox subjectDropdownMenuOne,
+                              ComboBox subjectDropdownMenuTwo, ComboBox subjectDropdownMenuThree, 
+                              ComboBox subjectDropdownMenuFour, ComboBox subjectDropdownMenuFive)
         {
-            if (Validation.isNullOrEmpty(subject))
+            if (subjectDropdownMenuOne.SelectedIndex < 0 && subjectDropdownMenuTwo.SelectedIndex < 0
+                 && subjectDropdownMenuThree.SelectedIndex < 0 && subjectDropdownMenuFour.SelectedIndex < 0
+                && subjectDropdownMenuFive.SelectedIndex < 0)
             {
-                MessageBox.Show($"The field {fieldName} should not be empty", "Error");
-                return subject;
+                MessageBox.Show("All subjects required", "Error Validation");
+                return;
             }
-            else
-            {
-                return subject;
-            }
+
         }
         public static bool isUserInputValid(string firstName, string lastName, string email, string contactNumber, string address, string course)
         {

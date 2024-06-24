@@ -1,4 +1,5 @@
-﻿using CourseEnrolmentSystem.Data_Access_Layer;
+﻿using CourseEnrolmentSystem.Business_Layer;
+using CourseEnrolmentSystem.Data_Access_Layer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +16,7 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
                               ComboBox subjectDropdownMenuTwo, ComboBox gradeDropdownMenuTwo,
                               ComboBox subjectDropdownMenuThree, ComboBox gradeDropdownMenuThree,
                               ComboBox subjectDropdownMenuFour, ComboBox gradeDropdownMenuFour,
-                              ComboBox subjectDropdownMenuFive, ComboBox gradeDropdownMenuFive,
-                              ListBox CoursesListBox)
+                              ComboBox subjectDropdownMenuFive, ComboBox gradeDropdownMenuFive, TableLayoutPanel coursesAvailableTable)
         {
             try
             {
@@ -26,20 +26,26 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
                 subjects.Add(new Subject(subjectDropdownMenuFour.Text, Convert.ToChar(gradeDropdownMenuFour.Text)));
                 subjects.Add(new Subject(subjectDropdownMenuFive.Text, Convert.ToChar(gradeDropdownMenuFive.Text)));
 
-                //Messa+geBox.Show($"{Points.CalculatePoints(subjects)}");
-
                 List<string> courseAvailable = DatabaseDal.GetCourse(Points.CalculatePoints(subjects));
 
-                CoursesListBox.Items.Clear();
+                coursesAvailableTable.Controls.Clear();
+                int rowNumber = courseAvailable.Count;
+
+                coursesAvailableTable.ColumnCount = 3;
+                coursesAvailableTable.RowCount = rowNumber;
+
+                coursesAvailableTable.RowCount = rowNumber;
                 foreach (string course in courseAvailable)
                 {
-                    CoursesListBox.Items.Add(course);
-
+                    coursesAvailableTable.Controls.Add(new Label() { Text = $"{course}" }, 0, rowNumber - 1 );
+                    coursesAvailableTable.Controls.Add(new Button() { Text = "Register"}, 1, rowNumber - 1 ); 
+                    rowNumber--;
                 }
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Incorrect inputs!!! \nCheck Subject and Grades Properly \nAll input required \n{ex.Message}", "Error");
+                MessageBox.Show($"Incorrect inputs!!! \nCheck Subject and Grades Properly \nAll input required \n{ex.Message}", "Error Validation");
             }
         }
 

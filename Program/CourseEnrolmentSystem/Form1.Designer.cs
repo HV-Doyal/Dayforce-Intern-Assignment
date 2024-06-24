@@ -45,13 +45,8 @@
             this.LabelAvailability = new System.Windows.Forms.Label();
             this.GetCourseButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
-            this.CourseAvailableFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.CoursesListBox = new System.Windows.Forms.ListBox();
-            this.RegisterButton = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.AvailableCourses = new System.Windows.Forms.TableLayoutPanel();
             this.DropdownMenubackground.SuspendLayout();
-            this.CourseAvailableFlowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // DropdownMenubackground
@@ -249,6 +244,7 @@
             // 
             // SubjectDropdownMenuOne
             // 
+            this.SubjectDropdownMenuOne.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SubjectDropdownMenuOne.FormattingEnabled = true;
             this.SubjectDropdownMenuOne.Items.AddRange(new object[] {
             "Computer Science",
@@ -268,7 +264,7 @@
             this.LabelAvailability.AutoSize = true;
             this.LabelAvailability.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelAvailability.ForeColor = System.Drawing.Color.White;
-            this.LabelAvailability.Location = new System.Drawing.Point(666, 62);
+            this.LabelAvailability.Location = new System.Drawing.Point(672, 26);
             this.LabelAvailability.Name = "LabelAvailability";
             this.LabelAvailability.Size = new System.Drawing.Size(258, 41);
             this.LabelAvailability.TabIndex = 14;
@@ -278,7 +274,7 @@
             // GetCourseButton
             // 
             this.GetCourseButton.BackColor = System.Drawing.Color.Lime;
-            this.GetCourseButton.Location = new System.Drawing.Point(626, 521);
+            this.GetCourseButton.Location = new System.Drawing.Point(940, 531);
             this.GetCourseButton.Name = "GetCourseButton";
             this.GetCourseButton.Size = new System.Drawing.Size(157, 50);
             this.GetCourseButton.TabIndex = 15;
@@ -289,7 +285,7 @@
             // ClearButton
             // 
             this.ClearButton.BackColor = System.Drawing.Color.Red;
-            this.ClearButton.Location = new System.Drawing.Point(856, 521);
+            this.ClearButton.Location = new System.Drawing.Point(1179, 531);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(107, 50);
             this.ClearButton.TabIndex = 16;
@@ -297,76 +293,30 @@
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
-            // CourseAvailableFlowLayoutPanel
+            // AvailableCourses
             // 
-            this.CourseAvailableFlowLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(40)))), ((int)(((byte)(57)))));
-            this.CourseAvailableFlowLayoutPanel.Controls.Add(this.CoursesListBox);
-            this.CourseAvailableFlowLayoutPanel.Controls.Add(this.tableLayoutPanel1);
-            this.CourseAvailableFlowLayoutPanel.Controls.Add(this.tableLayoutPanel2);
-            this.CourseAvailableFlowLayoutPanel.Location = new System.Drawing.Point(553, 138);
-            this.CourseAvailableFlowLayoutPanel.Name = "CourseAvailableFlowLayoutPanel";
-            this.CourseAvailableFlowLayoutPanel.Size = new System.Drawing.Size(465, 352);
-            this.CourseAvailableFlowLayoutPanel.TabIndex = 0;
-            this.CourseAvailableFlowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CourseAvailableFlowLayoutPanel_Paint);
-            // 
-            // CoursesListBox
-            // 
-            this.CoursesListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(40)))), ((int)(((byte)(57)))));
-            this.CoursesListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CoursesListBox.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoursesListBox.ForeColor = System.Drawing.Color.White;
-            this.CoursesListBox.FormattingEnabled = true;
-            this.CoursesListBox.ItemHeight = 35;
-            this.CoursesListBox.Location = new System.Drawing.Point(3, 3);
-            this.CoursesListBox.Name = "CoursesListBox";
-            this.CoursesListBox.Size = new System.Drawing.Size(462, 350);
-            this.CoursesListBox.TabIndex = 0;
-            this.CoursesListBox.SelectedIndexChanged += new System.EventHandler(this.CoursesListBox_SelectedIndexChanged_1);
-            // 
-            // RegisterButton
-            // 
-            this.RegisterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.RegisterButton.Location = new System.Drawing.Point(515, 12);
-            this.RegisterButton.Name = "RegisterButton";
-            this.RegisterButton.Size = new System.Drawing.Size(157, 50);
-            this.RegisterButton.TabIndex = 17;
-            this.RegisterButton.Text = "Register";
-            this.RegisterButton.UseVisualStyleBackColor = false;
-            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 359);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(209, 359);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 125);
-            this.tableLayoutPanel2.TabIndex = 2;
+            this.AvailableCourses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(51)))), ((int)(((byte)(57)))));
+            this.AvailableCourses.ColumnCount = 4;
+            this.AvailableCourses.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.AvailableCourses.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.AvailableCourses.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 570F));
+            this.AvailableCourses.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            this.AvailableCourses.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AvailableCourses.ForeColor = System.Drawing.Color.White;
+            this.AvailableCourses.Location = new System.Drawing.Point(527, 89);
+            this.AvailableCourses.Name = "AvailableCourses";
+            this.AvailableCourses.RowCount = 1;
+            this.AvailableCourses.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.AvailableCourses.Size = new System.Drawing.Size(759, 398);
+            this.AvailableCourses.TabIndex = 18;
+            this.AvailableCourses.Paint += new System.Windows.Forms.PaintEventHandler(this.AvailableCourses_Paint);
             // 
             // CourseEnrolmentSystem
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(1063, 601);
-            this.Controls.Add(this.RegisterButton);
-            this.Controls.Add(this.CourseAvailableFlowLayoutPanel);
+            this.ClientSize = new System.Drawing.Size(1309, 601);
+            this.Controls.Add(this.AvailableCourses);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.GetCourseButton);
             this.Controls.Add(this.LabelAvailability);
@@ -380,7 +330,6 @@
             this.Load += new System.EventHandler(this.CourseEnrolmentSystem_Load);
             this.DropdownMenubackground.ResumeLayout(false);
             this.DropdownMenubackground.PerformLayout();
-            this.CourseAvailableFlowLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,11 +354,7 @@
         private System.Windows.Forms.Label LabelAvailability;
         private System.Windows.Forms.Button GetCourseButton;
         private System.Windows.Forms.Button ClearButton;
-        private System.Windows.Forms.FlowLayoutPanel CourseAvailableFlowLayoutPanel;
-        private System.Windows.Forms.ListBox CoursesListBox;
-        private System.Windows.Forms.Button RegisterButton;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel AvailableCourses;
     }
 }
 

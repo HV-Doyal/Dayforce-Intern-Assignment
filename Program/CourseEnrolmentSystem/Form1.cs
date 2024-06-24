@@ -38,12 +38,14 @@ namespace CourseEnrolmentSystem
 
         private void GetCourseButton_Click(object sender, EventArgs e)
         {
+            ValidationProcessing.ValidateSubjectDropdown(SubjectDropdownMenuOne, SubjectDropdownMenuTwo, SubjectDropdownMenuThree,
+                                                                SubjectDropdownMenuFour, SubjectDropdownMenuFive);
+
             UiFunction.GetCourses(this, SubjectDropdownMenuOne, GradeDropdownMenuOne,
                                    SubjectDropdownMenuTwo, GradeDropdownMenuTwo,
                                    SubjectDropdownMenuThree, GradeDropdownMenuThree,
                                    SubjectDropdownMenuFour, GradeDropdownMenuFour,
-                                   SubjectDropdownMenuFive, GradeDropdownMenuFive,
-                                   CoursesListBox);
+                                   SubjectDropdownMenuFive, GradeDropdownMenuFive, AvailableCourses);
         }
 
         private void CourseAvailableFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
@@ -67,6 +69,7 @@ namespace CourseEnrolmentSystem
 
         private void ClearButton_Click(object sender, EventArgs e)
         {
+            SubjectDropdownMenuOne.SelectedIndex = -1;
             SubjectDropdownMenuOne.ResetText();
             SubjectDropdownMenuTwo.ResetText();
             SubjectDropdownMenuThree.ResetText();
@@ -79,12 +82,12 @@ namespace CourseEnrolmentSystem
             GradeDropdownMenuFour.ResetText();
             GradeDropdownMenuFive.ResetText();
 
-            CoursesListBox.Items.Clear();
+            AvailableCourses.Controls.Clear();
         }
 
         private void CourseEnrolmentSystem_Load(object sender, EventArgs e)
         {
-       
+
         }
 
         private void CourseAvailable_SelectedIndexChanged(object sender, EventArgs e)
@@ -107,6 +110,16 @@ namespace CourseEnrolmentSystem
             CourseEnrolmentSystemTwo courseEnrolmentSystemTwo = new CourseEnrolmentSystemTwo();
             courseEnrolmentSystemTwo.Show();
             this.Hide();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void AvailableCourses_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
