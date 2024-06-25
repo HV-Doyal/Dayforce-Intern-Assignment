@@ -16,36 +16,119 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
                               ComboBox subjectDropdownMenuTwo, ComboBox gradeDropdownMenuTwo,
                               ComboBox subjectDropdownMenuThree, ComboBox gradeDropdownMenuThree,
                               ComboBox subjectDropdownMenuFour, ComboBox gradeDropdownMenuFour,
-                              ComboBox subjectDropdownMenuFive, ComboBox gradeDropdownMenuFive, TableLayoutPanel coursesAvailableTable)
+                              ComboBox subjectDropdownMenuFive, ComboBox gradeDropdownMenuFive, 
+                              TableLayoutPanel coursesAvailableTable, Label availability)
         {
             try
-            {
-                subjects.Add(new Subject(subjectDropdownMenuOne.Text, Convert.ToChar(gradeDropdownMenuOne.Text)));
-                subjects.Add(new Subject(subjectDropdownMenuTwo.Text, Convert.ToChar(gradeDropdownMenuTwo.Text)));
-                subjects.Add(new Subject(subjectDropdownMenuThree.Text, Convert.ToChar(gradeDropdownMenuThree.Text)));
-                subjects.Add(new Subject(subjectDropdownMenuFour.Text, Convert.ToChar(gradeDropdownMenuFour.Text)));
-                subjects.Add(new Subject(subjectDropdownMenuFive.Text, Convert.ToChar(gradeDropdownMenuFive.Text)));
-
-                List<string> courseAvailable = DatabaseDal.GetCourse(Points.CalculatePoints(subjects));
-
-                coursesAvailableTable.Controls.Clear();
-                int rowNumber = courseAvailable.Count;
-
-                coursesAvailableTable.ColumnCount = 3;
-                coursesAvailableTable.RowCount = rowNumber;
-
-                coursesAvailableTable.RowCount = rowNumber;
-                foreach (string course in courseAvailable)
+            {               
+                for (int i = 1; i <= 5; i++)
                 {
-                    coursesAvailableTable.Controls.Add(new Label() { Text = $"{course}" }, 0, rowNumber - 1 );
-                    coursesAvailableTable.Controls.Add(new Button() { Text = "Register"}, 1, rowNumber - 1 ); 
-                    rowNumber--;
+                    string subjectName = "";
+                    char grade = ' ';
+                        switch (i)
+                        {
+                            case 1:
+                                subjectName = subjectDropdownMenuOne.Text;
+                                grade = Convert.ToChar(gradeDropdownMenuOne.Text);
+                                break;
+                            case 2:
+                                subjectName = subjectDropdownMenuTwo.Text;
+                                grade = Convert.ToChar(gradeDropdownMenuTwo.Text);
+                                break;
+                            case 3:
+                                subjectName = subjectDropdownMenuThree.Text;
+                                grade = Convert.ToChar(gradeDropdownMenuThree.Text);
+                                break;
+                            case 4:
+                                subjectName = subjectDropdownMenuFour.Text;
+                                grade = Convert.ToChar(gradeDropdownMenuFour.Text);
+                                break;
+                            case 5:
+                                subjectName = subjectDropdownMenuFive.Text;
+                                grade = Convert.ToChar(gradeDropdownMenuFive.Text);
+                                break;
+                        }
+                        // Check if subject already exists in the list
+                        if (!subjects.Any(s => s.Name == subjectName))
+                        {
+                            subjects.Add(new Subject(subjectName, grade));
+                        }
+                        else
+                        {
+                            MessageBox.Show($"Subject '{subjectName}' already exists. Please choose a different subject.\n Cleared duplicate field", "Duplicate Subject", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            subjectName = "";
+                            switch (i)
+                            {
+                                case 1:
+                                    subjectDropdownMenuOne.SelectedIndex = -1;
+                                    gradeDropdownMenuOne.SelectedIndex = -1;
+                                    break;
+                                case 2:
+                                    subjectDropdownMenuTwo.SelectedIndex = -1;
+                                    gradeDropdownMenuTwo.SelectedIndex = -1;
+                                break;
+                                case 3:
+                                    subjectDropdownMenuThree.SelectedIndex = -1;
+                                    gradeDropdownMenuThree.SelectedIndex = -1;
+                                break;
+                                case 4:
+                                    subjectDropdownMenuFour.SelectedIndex = -1;
+                                    gradeDropdownMenuFour.SelectedIndex = -1;
+                                break;
+                                case 5:
+                                    subjectDropdownMenuFive.SelectedIndex = -1;
+                                    gradeDropdownMenuFive.SelectedIndex = -1;
+                                break;
+                            }
+                        }
                 }
-
+                List<string> courseAvailable = DatabaseDal.GetCourse(TotalPoints());
+                DisplayCourses(courseAvailable, coursesAvailableTable, availability);
+                subjects.Clear();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Incorrect inputs!!! \nCheck Subject and Grades Properly \nAll input required \n{ex.Message}", "Error Validation");
+                subjects.Clear();
+            }
+        }
+
+        public static void DisplayCourses(List<string> courseAvailable, TableLayoutPanel coursesAvailableTable, Label availability)
+        {
+            coursesAvailableTable.Controls.Clear();
+            availability.Text = "Courses Available";
+            int rowNumber = courseAvailable.Count;
+
+            coursesAvailableTable.ColumnCount = 2;
+            coursesAvailableTable.RowCount = rowNumber;
+
+            if (courseAvailable.Count > 0)
+            {
+                for (int i = 0; i < courseAvailable.Count; i++)
+                {
+                    string course = courseAvailable[i];
+
+                    //label forcourse name
+                    Label courseLabel = new Label();
+                    courseLabel.Text = course;
+                    courseLabel.AutoSize = true;
+                    coursesAvailableTable.Controls.Add(courseLabel, 0, i);
+
+                    //button for each course
+                    Button registerButton = new Button();
+                    registerButton.Text = "Register";
+                    registerButton.AutoSize = true;
+                    coursesAvailableTable.Controls.Add(registerButton, 1, i);
+                }
+                //seting styles of table
+                coursesAvailableTable.ColumnStyles[0].SizeType = SizeType.AutoSize;
+                coursesAvailableTable.ColumnStyles[1].SizeType = SizeType.Absolute;
+                coursesAvailableTable.ColumnStyles[1].Width = 150;
+                coursesAvailableTable.ColumnStyles[2].SizeType = SizeType.AutoSize;
+            }
+            else
+            {
+                availability.Text = "No Course Available";
             }
         }
 

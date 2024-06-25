@@ -264,7 +264,7 @@
             this.LabelAvailability.AutoSize = true;
             this.LabelAvailability.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelAvailability.ForeColor = System.Drawing.Color.White;
-            this.LabelAvailability.Location = new System.Drawing.Point(672, 26);
+            this.LabelAvailability.Location = new System.Drawing.Point(641, 33);
             this.LabelAvailability.Name = "LabelAvailability";
             this.LabelAvailability.Size = new System.Drawing.Size(258, 41);
             this.LabelAvailability.TabIndex = 14;
@@ -274,7 +274,7 @@
             // GetCourseButton
             // 
             this.GetCourseButton.BackColor = System.Drawing.Color.Lime;
-            this.GetCourseButton.Location = new System.Drawing.Point(940, 531);
+            this.GetCourseButton.Location = new System.Drawing.Point(648, 521);
             this.GetCourseButton.Name = "GetCourseButton";
             this.GetCourseButton.Size = new System.Drawing.Size(157, 50);
             this.GetCourseButton.TabIndex = 15;
@@ -285,7 +285,7 @@
             // ClearButton
             // 
             this.ClearButton.BackColor = System.Drawing.Color.Red;
-            this.ClearButton.Location = new System.Drawing.Point(1179, 531);
+            this.ClearButton.Location = new System.Drawing.Point(873, 521);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(107, 50);
             this.ClearButton.TabIndex = 16;
@@ -301,13 +301,13 @@
             this.AvailableCourses.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.AvailableCourses.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 570F));
             this.AvailableCourses.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.AvailableCourses.Font = new System.Drawing.Font("Comic Sans MS", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AvailableCourses.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AvailableCourses.ForeColor = System.Drawing.Color.White;
-            this.AvailableCourses.Location = new System.Drawing.Point(527, 89);
+            this.AvailableCourses.Location = new System.Drawing.Point(546, 89);
             this.AvailableCourses.Name = "AvailableCourses";
             this.AvailableCourses.RowCount = 1;
             this.AvailableCourses.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.AvailableCourses.Size = new System.Drawing.Size(759, 398);
+            this.AvailableCourses.Size = new System.Drawing.Size(444, 398);
             this.AvailableCourses.TabIndex = 18;
             this.AvailableCourses.Paint += new System.Windows.Forms.PaintEventHandler(this.AvailableCourses_Paint);
             // 
@@ -315,7 +315,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(47)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(1309, 601);
+            this.ClientSize = new System.Drawing.Size(1023, 601);
             this.Controls.Add(this.AvailableCourses);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.GetCourseButton);

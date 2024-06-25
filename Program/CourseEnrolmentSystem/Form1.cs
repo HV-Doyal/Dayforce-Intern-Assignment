@@ -45,7 +45,7 @@ namespace CourseEnrolmentSystem
                                    SubjectDropdownMenuTwo, GradeDropdownMenuTwo,
                                    SubjectDropdownMenuThree, GradeDropdownMenuThree,
                                    SubjectDropdownMenuFour, GradeDropdownMenuFour,
-                                   SubjectDropdownMenuFive, GradeDropdownMenuFive, AvailableCourses);
+                                   SubjectDropdownMenuFive, GradeDropdownMenuFive, AvailableCourses, LabelAvailability);
         }
 
         private void CourseAvailableFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
