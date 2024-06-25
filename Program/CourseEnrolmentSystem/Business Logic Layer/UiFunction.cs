@@ -93,7 +93,7 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
             }
             if (isValid)
             {
-                List<string> courseAvailable = DatabaseDal.GetCourse(subjects, TotalPoints());
+                List<string> courseAvailable = DatabaseBll.GetAvailableCourses(subjects, TotalPoints());
                 DisplayCourses(courseAvailable, coursesAvailableTable, availability, form);
             }
             else

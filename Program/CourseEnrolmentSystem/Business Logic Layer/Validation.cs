@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Assignment.Business_Layer
-{
+ 
     public class Validation
     {
         public static bool isNullOrEmpty(string value)
