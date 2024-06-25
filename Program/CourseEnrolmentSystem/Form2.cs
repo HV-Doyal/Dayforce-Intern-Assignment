@@ -49,7 +49,6 @@ namespace CourseEnrolmentSystem
             string address = AddressTextBox.Text;
             string course = CourseTextBox.Text;
             fees = FeesCalculation(courseSelected, IsFulltimeCheckBox);
-            //MessageBox.Show($"{fees}");
 
             if (ValidationProcessing.isUserInputValid(firstName, lastName, email, contactNumber, address, course))
             {
@@ -81,19 +80,16 @@ namespace CourseEnrolmentSystem
         {
             double finalFees = DatabaseDal.GetFulltimeCost(course);
             var points = UiFunction.TotalPoints();
-            MessageBox.Show($"{DatabaseDal.GetFulltimeCost(course)} \n{points}");
             
 
             if (isFulltimeCheckBox.Checked == true && ( points > 45))
             {
                 finalFees *= 0.9;
-                MessageBox.Show($"{finalFees}");
             }
 
             if (isFulltimeCheckBox.Checked == false)
             {
                 finalFees = DatabaseDal.GetParttimeCost(course);
-                MessageBox.Show($"30000");
             }
             return finalFees;
         }

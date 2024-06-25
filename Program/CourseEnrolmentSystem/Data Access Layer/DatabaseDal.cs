@@ -11,7 +11,8 @@ namespace CourseEnrolmentSystem.Data_Access_Layer
 {
     internal class DatabaseDal
     {
-        private static readonly string _connectionString = @"data source=DayforcefMibEuW;initial catalog=master;trusted_connection=true";
+        //private static readonly string _connectionString = @"data source=DayforcefMibEuW;initial catalog=master;trusted_connection=true";
+        private static readonly string _connectionString = @"data source=HVD-PC;initial catalog=master;trusted_connection=true";
 
         public static List<string> GetCourse(int points)
         {

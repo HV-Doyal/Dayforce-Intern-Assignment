@@ -65,27 +65,22 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
                             case 1:
                                 subjectDropdownMenuOne.SelectedIndex = -1;
                                 gradeDropdownMenuOne.SelectedIndex = -1;
-                                subjects.Clear();
                                 break;
                             case 2:
                                 subjectDropdownMenuTwo.SelectedIndex = -1;
                                 gradeDropdownMenuTwo.SelectedIndex = -1;
-                                subjects.Clear();
                                 break;
                             case 3:
                                 subjectDropdownMenuThree.SelectedIndex = -1;
                                 gradeDropdownMenuThree.SelectedIndex = -1;
-                                subjects.Clear();
                                 break;
                             case 4:
                                 subjectDropdownMenuFour.SelectedIndex = -1;
                                 gradeDropdownMenuFour.SelectedIndex = -1;
-                                subjects.Clear();
                                 break;
                             case 5:
                                 subjectDropdownMenuFive.SelectedIndex = -1;
                                 gradeDropdownMenuFive.SelectedIndex = -1;
-                                subjects.Clear();
                                 break;
                         }
                     }
@@ -100,6 +95,10 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
             {
                 List<string> courseAvailable = DatabaseDal.GetCourse(TotalPoints());
                 DisplayCourses(courseAvailable, coursesAvailableTable, availability, form);
+            }
+            else
+            {
+                subjects.Clear();
             }
         }
         public static void DisplayCourses(List<string> courseAvailable, TableLayoutPanel coursesAvailableTable, Label availability, Form form)

@@ -44,7 +44,6 @@ namespace CourseEnrolmentSystem.Business_Layer
                 {
                     int contactNum = int.Parse(contactNumber);
                     isValid = true;
-                    MessageBox.Show($"{firstName} {lastName} \n{email} \n{contactNumber} \n{address}", "Success");
                 }
                 catch
                 {
