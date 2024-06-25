@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CourseEnrolmentSystem.Data_Access_Layer
 {
@@ -19,31 +20,20 @@ namespace CourseEnrolmentSystem.Data_Access_Layer
     {
         public static int SubjectPoint(Subject subject)
         {
-            int point = 0 ;
             char grade = subject.Grade;
-            switch (grade)
+
+            // Try to parse the grade character into a GradePoint enum
+            if (Enum.TryParse<GradePoint>(grade.ToString(), out GradePoint gradePoint))
             {
-                case 'A':
-                    point += (int)GradePoint.A; 
-                    break;
-                case 'B':
-                    point += (int)GradePoint.B;
-                    break;
-                case 'C':
-                    point += (int)GradePoint.C;
-                    break;
-                case 'D':
-                    point += (int)GradePoint.D;
-                    break;
-                case 'E':
-                    point += (int)GradePoint.E;
-                    break;
-                case 'F':
-                    point += (int)GradePoint.F;
-                    break;
+                return (int)gradePoint;
             }
-            return point;
+            else
+            {
+                MessageBox.Show("Invalid Grade");
+                return 0;
+            }
         }
+
         public static int CalculatePoints(List<Subject> subjects)
         {
             int totalPoints = 0;
