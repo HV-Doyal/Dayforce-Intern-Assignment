@@ -93,5 +93,14 @@ namespace CourseEnrolmentSystem
             }
             return finalFees;
         }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            FirstNameTextBox.Clear();
+            LastNameTextBox.Clear();
+            EmailTextBox.Clear();
+            ContactNumberTextBox.Clear();
+            AddressTextBox.Clear();
+        }
     }
 }
