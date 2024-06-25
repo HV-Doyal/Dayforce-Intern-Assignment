@@ -16,9 +16,16 @@ namespace CourseEnrolmentSystem
 {
     public partial class CourseEnrolmentSystemTwo : Form
     {
-        public CourseEnrolmentSystemTwo()
+        string courseSelected;
+        double fees;
+        public CourseEnrolmentSystemTwo(string course)
         {
             InitializeComponent();
+            courseSelected = course;
+            CourseTextBox.Text = course;
+            fees = FeesCalculation(course, IsFulltimeCheckBox);
+            FeesTextBox.Text = fees.ToString();
+
         }
 
         private void CourseEnrolmentSystemTwo_Load(object sender, EventArgs e)
@@ -41,8 +48,8 @@ namespace CourseEnrolmentSystem
             string contactNumber = ContactNumberTextBox.Text;
             string address = AddressTextBox.Text;
             string course = CourseTextBox.Text;
-            double fees = FeesCalculation(course);
-            MessageBox.Show($"{fees}");
+            fees = FeesCalculation(courseSelected, IsFulltimeCheckBox);
+            //MessageBox.Show($"{fees}");
 
             if (ValidationProcessing.isUserInputValid(firstName, lastName, email, contactNumber, address, course))
             {
@@ -65,23 +72,28 @@ namespace CourseEnrolmentSystem
         {
             
         }
-
-        private double FeesCalculation(string course)
+        private void IsFulltimeCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            fees = FeesCalculation(courseSelected, IsFulltimeCheckBox);
+            FeesTextBox.Text = fees.ToString();
+        }
+        public static double FeesCalculation(string course, CheckBox isFulltimeCheckBox)
         {
             double finalFees = DatabaseDal.GetFulltimeCost(course);
-            if (IsFulltimeCheckBox.Checked && (UiFunction.TotalPoints() > 45))
+            var points = UiFunction.TotalPoints();
+            MessageBox.Show($"{DatabaseDal.GetFulltimeCost(course)} \n{points}");
+            
+
+            if (isFulltimeCheckBox.Checked == true && ( points > 45))
             {
-                finalFees = (90 / 100) * finalFees;
+                finalFees *= 0.9;
                 MessageBox.Show($"{finalFees}");
             }
-            else if (IsFulltimeCheckBox.Checked && (UiFunction.TotalPoints() <= 45))
-            {
-                return finalFees;
-            }
 
-            if (!IsFulltimeCheckBox.Checked)
+            if (isFulltimeCheckBox.Checked == false)
             {
                 finalFees = DatabaseDal.GetParttimeCost(course);
+                MessageBox.Show($"30000");
             }
             return finalFees;
         }

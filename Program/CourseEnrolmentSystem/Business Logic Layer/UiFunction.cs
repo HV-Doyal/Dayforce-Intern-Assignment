@@ -3,6 +3,7 @@ using CourseEnrolmentSystem.Data_Access_Layer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,81 +20,89 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
                               ComboBox subjectDropdownMenuFive, ComboBox gradeDropdownMenuFive, 
                               TableLayoutPanel coursesAvailableTable, Label availability)
         {
+            bool isValid = false;
             try
             {               
                 for (int i = 1; i <= 5; i++)
                 {
                     string subjectName = "";
                     char grade = ' ';
+                    switch (i)
+                    {
+                        case 1:
+                            subjectName = subjectDropdownMenuOne.Text;
+                            grade = Convert.ToChar(gradeDropdownMenuOne.Text);
+                            break;
+                        case 2:
+                            subjectName = subjectDropdownMenuTwo.Text;
+                            grade = Convert.ToChar(gradeDropdownMenuTwo.Text);
+                            break;
+                        case 3:
+                            subjectName = subjectDropdownMenuThree.Text;
+                            grade = Convert.ToChar(gradeDropdownMenuThree.Text);
+                            break;
+                        case 4:
+                            subjectName = subjectDropdownMenuFour.Text;
+                            grade = Convert.ToChar(gradeDropdownMenuFour.Text);
+                            break;
+                        case 5:
+                            subjectName = subjectDropdownMenuFive.Text;
+                            grade = Convert.ToChar(gradeDropdownMenuFive.Text);
+                            break;
+                    }
+                    // Check if subject already exists in the list
+                    if (!subjects.Any(s => s.Name == subjectName))
+                    {
+                        subjects.Add(new Subject(subjectName, grade));
+                        if (subjects.Count == 5) isValid = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Subject '{subjectName}' already exists. Please choose a different subject.\n Cleared duplicate field", "Duplicate Subject", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        subjectName = "";
                         switch (i)
                         {
                             case 1:
-                                subjectName = subjectDropdownMenuOne.Text;
-                                grade = Convert.ToChar(gradeDropdownMenuOne.Text);
+                                subjectDropdownMenuOne.SelectedIndex = -1;
+                                gradeDropdownMenuOne.SelectedIndex = -1;
+                                subjects.Clear();
                                 break;
                             case 2:
-                                subjectName = subjectDropdownMenuTwo.Text;
-                                grade = Convert.ToChar(gradeDropdownMenuTwo.Text);
+                                subjectDropdownMenuTwo.SelectedIndex = -1;
+                                gradeDropdownMenuTwo.SelectedIndex = -1;
+                                subjects.Clear();
                                 break;
                             case 3:
-                                subjectName = subjectDropdownMenuThree.Text;
-                                grade = Convert.ToChar(gradeDropdownMenuThree.Text);
+                                subjectDropdownMenuThree.SelectedIndex = -1;
+                                gradeDropdownMenuThree.SelectedIndex = -1;
+                                subjects.Clear();
                                 break;
                             case 4:
-                                subjectName = subjectDropdownMenuFour.Text;
-                                grade = Convert.ToChar(gradeDropdownMenuFour.Text);
+                                subjectDropdownMenuFour.SelectedIndex = -1;
+                                gradeDropdownMenuFour.SelectedIndex = -1;
+                                subjects.Clear();
                                 break;
                             case 5:
-                                subjectName = subjectDropdownMenuFive.Text;
-                                grade = Convert.ToChar(gradeDropdownMenuFive.Text);
+                                subjectDropdownMenuFive.SelectedIndex = -1;
+                                gradeDropdownMenuFive.SelectedIndex = -1;
+                                subjects.Clear();
                                 break;
                         }
-                        // Check if subject already exists in the list
-                        if (!subjects.Any(s => s.Name == subjectName))
-                        {
-                            subjects.Add(new Subject(subjectName, grade));
-                        }
-                        else
-                        {
-                            MessageBox.Show($"Subject '{subjectName}' already exists. Please choose a different subject.\n Cleared duplicate field", "Duplicate Subject", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            subjectName = "";
-                            switch (i)
-                            {
-                                case 1:
-                                    subjectDropdownMenuOne.SelectedIndex = -1;
-                                    gradeDropdownMenuOne.SelectedIndex = -1;
-                                    break;
-                                case 2:
-                                    subjectDropdownMenuTwo.SelectedIndex = -1;
-                                    gradeDropdownMenuTwo.SelectedIndex = -1;
-                                break;
-                                case 3:
-                                    subjectDropdownMenuThree.SelectedIndex = -1;
-                                    gradeDropdownMenuThree.SelectedIndex = -1;
-                                break;
-                                case 4:
-                                    subjectDropdownMenuFour.SelectedIndex = -1;
-                                    gradeDropdownMenuFour.SelectedIndex = -1;
-                                break;
-                                case 5:
-                                    subjectDropdownMenuFive.SelectedIndex = -1;
-                                    gradeDropdownMenuFive.SelectedIndex = -1;
-                                break;
-                            }
-                        }
-                }
-                List<string> courseAvailable = DatabaseDal.GetCourse(TotalPoints());
-                DisplayCourses(courseAvailable, coursesAvailableTable, availability);
+                    }
+                }                
+            }
+            catch 
+            {
+                MessageBox.Show($"Incorrect inputs!!! \nCheck Subject and Grades Properly \nAll input required", "Error Validation");
                 subjects.Clear();
             }
-            catch (Exception ex)
+            if (isValid)
             {
-                MessageBox.Show($"Incorrect inputs!!! \nCheck Subject and Grades Properly \nAll input required \n{ex.Message}", "Error Validation");
-                subjects.Clear();
+                List<string> courseAvailable = DatabaseDal.GetCourse(TotalPoints());
+                DisplayCourses(courseAvailable, coursesAvailableTable, availability, form);
             }
         }
-
-        public static void DisplayCourses(List<string> courseAvailable, TableLayoutPanel coursesAvailableTable, Label availability)
+        public static void DisplayCourses(List<string> courseAvailable, TableLayoutPanel coursesAvailableTable, Label availability, Form form)
         {
             coursesAvailableTable.Controls.Clear();
             availability.Text = "Courses Available";
@@ -118,6 +127,13 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
                     Button registerButton = new Button();
                     registerButton.Text = "Register";
                     registerButton.AutoSize = true;
+                    registerButton.Click += (sender, e) =>
+                    {
+                        // Open Form2 and pass course as a parameter
+                        CourseEnrolmentSystemTwo courseEnrolmentSystemTwo = new CourseEnrolmentSystemTwo(course);
+                        courseEnrolmentSystemTwo.Show();
+                        form.Hide();
+                    };
                     coursesAvailableTable.Controls.Add(registerButton, 1, i);
                 }
                 //seting styles of table
@@ -134,8 +150,7 @@ namespace CourseEnrolmentSystem.Business_Logic_Layer
 
         public static int TotalPoints()
         {
-            int totalPoints = Points.CalculatePoints(subjects);
-            return totalPoints;
+            return Points.CalculatePoints(subjects);
         }
     }
 }

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business Logic Layer\DatabaseBll.cs" />
+    <Compile Include="Business Logic Layer\Fees.cs" />
     <Compile Include="Business Logic Layer\UiFunction.cs" />
     <Compile Include="Business Logic Layer\Validation.cs" />
     <Compile Include="Business Logic Layer\ValidationProcessing.cs" />

@@ -142,6 +142,8 @@
             // IsFulltimeCheckBox
             // 
             this.IsFulltimeCheckBox.AutoSize = true;
+            this.IsFulltimeCheckBox.Checked = true;
+            this.IsFulltimeCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.IsFulltimeCheckBox.ForeColor = System.Drawing.Color.White;
             this.IsFulltimeCheckBox.Location = new System.Drawing.Point(55, 448);
             this.IsFulltimeCheckBox.Name = "IsFulltimeCheckBox";
@@ -150,6 +152,7 @@
             this.IsFulltimeCheckBox.Text = "Is Fulltime";
             this.IsFulltimeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.IsFulltimeCheckBox.UseVisualStyleBackColor = true;
+            this.IsFulltimeCheckBox.CheckedChanged += new System.EventHandler(this.IsFulltimeCheckBox_CheckedChanged);
             // 
             // FirstNameTextBox
             // 
@@ -160,6 +163,7 @@
             // 
             // CourseTextBox
             // 
+            this.CourseTextBox.Enabled = false;
             this.CourseTextBox.Location = new System.Drawing.Point(213, 366);
             this.CourseTextBox.Name = "CourseTextBox";
             this.CourseTextBox.Size = new System.Drawing.Size(345, 40);

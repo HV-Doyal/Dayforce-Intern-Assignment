@@ -105,13 +105,6 @@ namespace CourseEnrolmentSystem
 
         }
 
-        private void RegisterButton_Click(object sender, EventArgs e)
-        {
-            CourseEnrolmentSystemTwo courseEnrolmentSystemTwo = new CourseEnrolmentSystemTwo();
-            courseEnrolmentSystemTwo.Show();
-            this.Hide();
-        }
-
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
