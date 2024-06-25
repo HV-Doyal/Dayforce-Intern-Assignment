@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseEnrolmentSystem", "CourseEnrolmentSystem.csproj", "{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetCostUnitTest", "..\GetCostUnitTest\GetCostUnitTest.csproj", "{70A0D538-3FD5-430A-94DA-7808870B8C5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A0D538-3FD5-430A-94DA-7808870B8C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A0D538-3FD5-430A-94DA-7808870B8C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A0D538-3FD5-430A-94DA-7808870B8C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A0D538-3FD5-430A-94DA-7808870B8C5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

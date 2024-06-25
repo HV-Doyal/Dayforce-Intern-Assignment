@@ -1,0 +1,6 @@
+C:\Users\harsh\OneDrive - Middlesex University\Projects\Dayforce-Intern-Assignment\Program\GetCostUnitTest\obj\Debug\net8.0\GetCostUnitTest.csproj.AssemblyReference.cache
+C:\Users\harsh\OneDrive - Middlesex University\Projects\Dayforce-Intern-Assignment\Program\GetCostUnitTest\obj\Debug\net8.0\GetCostUnitTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harsh\OneDrive - Middlesex University\Projects\Dayforce-Intern-Assignment\Program\GetCostUnitTest\obj\Debug\net8.0\GetCostUnitTest.AssemblyInfoInputs.cache
+C:\Users\harsh\OneDrive - Middlesex University\Projects\Dayforce-Intern-Assignment\Program\GetCostUnitTest\obj\Debug\net8.0\GetCostUnitTest.AssemblyInfo.cs
+C:\Users\harsh\OneDrive - Middlesex University\Projects\Dayforce-Intern-Assignment\Program\GetCostUnitTest\obj\Debug\net8.0\GetCostUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\harsh\OneDrive - Middlesex University\Projects\Dayforce-Intern-Assignment\Program\GetCostUnitTest\obj\Debug\net8.0\GetCostUnitTest.sourcelink.json
