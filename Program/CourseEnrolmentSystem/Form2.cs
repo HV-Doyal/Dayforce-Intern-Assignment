@@ -38,6 +38,7 @@ namespace CourseEnrolmentSystem
             CourseEnrolmentSystem courseEnrolmentSystem = new CourseEnrolmentSystem();
             courseEnrolmentSystem.Show();
             this.Hide();
+            MainFunction.ClearSubjects();
         }
 
         private void RegisterButton_Click(object sender, EventArgs e)
@@ -53,6 +54,9 @@ namespace CourseEnrolmentSystem
             if (ValidationProcessing.isUserInputValid(firstName, lastName, email, contactNumber, address, course))
             {
                 DatabaseDal.InsertStudent(firstName, lastName, email, contactNumber, address, course, fees);
+                CourseEnrolmentSystem courseEnrolmentSystem = new CourseEnrolmentSystem();
+                courseEnrolmentSystem.Show();
+                this.Hide();
             }
 
         }

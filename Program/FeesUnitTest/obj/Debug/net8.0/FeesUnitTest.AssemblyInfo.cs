@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FeesUnitTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8f4a5b1596c88c1185c313a04098d34022f029d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb0f1b928f4d8918ca4f708143e660a68bbf0afb")]
 [assembly: System.Reflection.AssemblyProductAttribute("FeesUnitTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FeesUnitTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
