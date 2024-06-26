@@ -11,7 +11,8 @@ select
 from sys.server_principals
 where name = suser_name()
 
-
+SELECT * FROM Course;
+SELECT * FROM Student;
 
 CREATE TABLE Course(
 	Course VARCHAR(50) Primary Key,

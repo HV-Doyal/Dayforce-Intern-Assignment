@@ -41,11 +41,12 @@ namespace CourseEnrolmentSystem
             ValidationProcessing.ValidateSubjectDropdown(SubjectDropdownMenuOne, SubjectDropdownMenuTwo, SubjectDropdownMenuThree,
                                                                 SubjectDropdownMenuFour, SubjectDropdownMenuFive);
 
-            UiFunction.GetCourses(this, SubjectDropdownMenuOne, GradeDropdownMenuOne,
+            MainFunction.GetCourses(this, SubjectDropdownMenuOne, GradeDropdownMenuOne,
                                    SubjectDropdownMenuTwo, GradeDropdownMenuTwo,
                                    SubjectDropdownMenuThree, GradeDropdownMenuThree,
                                    SubjectDropdownMenuFour, GradeDropdownMenuFour,
                                    SubjectDropdownMenuFive, GradeDropdownMenuFive, AvailableCourses, LabelAvailability);
+
         }
 
         private void CourseAvailableFlowLayoutPanel_Paint(object sender, PaintEventArgs e)

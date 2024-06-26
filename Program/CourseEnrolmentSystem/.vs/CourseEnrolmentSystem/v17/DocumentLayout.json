@@ -1,46 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\data access layer\\databasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:data access layer\\databasedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\harsh\\onedrive - middlesex university\\projects\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\business logic layer\\uifunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\uifunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\business logic layer\\validationprocessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\validationprocessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|c:\\users\\harsh\\onedrive - middlesex university\\projects\\dayforce-intern-assignment\\program\\courseenrolmentsystem\\business logic layer\\databasebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\databasebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\business logic layer\\points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\points.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\business logic layer\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10ABDFCB-02F4-48B3-8E8A-96C05AE4289A}|CourseEnrolmentSystem.csproj|solutionrelative:business logic layer\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,17 +17,8 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DatabaseBll.cs",
-              "DocumentMoniker": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\DatabaseBll.cs",
-              "RelativeDocumentMoniker": "Business Logic Layer\\DatabaseBll.cs",
-              "ToolTip": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\DatabaseBll.cs",
-              "RelativeToolTip": "Business Logic Layer\\DatabaseBll.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T17:49:13.454Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -72,116 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DatabaseDal.cs",
-              "DocumentMoniker": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Data Access Layer\\DatabaseDal.cs",
-              "RelativeDocumentMoniker": "Data Access Layer\\DatabaseDal.cs",
-              "ToolTip": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Data Access Layer\\DatabaseDal.cs",
-              "RelativeToolTip": "Data Access Layer\\DatabaseDal.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAiwHEAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T07:44:15.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Fees.cs",
-              "DocumentMoniker": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\Fees.cs",
-              "RelativeDocumentMoniker": "Business Logic Layer\\Fees.cs",
-              "ToolTip": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\Fees.cs",
-              "RelativeToolTip": "Business Logic Layer\\Fees.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T11:07:14.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form2.cs",
-              "RelativeToolTip": "Form2.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAIwFAAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T09:11:48.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Points.cs",
-              "DocumentMoniker": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\Points.cs",
-              "RelativeDocumentMoniker": "Business Logic Layer\\Points.cs",
-              "ToolTip": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\Points.cs",
-              "RelativeToolTip": "Business Logic Layer\\Points.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T07:27:35.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UiFunction.cs",
-              "DocumentMoniker": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\UiFunction.cs",
-              "RelativeDocumentMoniker": "Business Logic Layer\\UiFunction.cs",
-              "ToolTip": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\UiFunction.cs",
-              "RelativeToolTip": "Business Logic Layer\\UiFunction.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAgwA8AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T10:50:28.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form2.cs [Design]",
-              "RelativeToolTip": "Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T09:11:44.814Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T11:43:37.973Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ValidationProcessing.cs",
-              "DocumentMoniker": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\ValidationProcessing.cs",
-              "RelativeDocumentMoniker": "Business Logic Layer\\ValidationProcessing.cs",
-              "ToolTip": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Business Logic Layer\\ValidationProcessing.cs",
-              "RelativeToolTip": "Business Logic Layer\\ValidationProcessing.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAQwB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T11:30:37.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\harsh\\OneDrive - Middlesex University\\Projects\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form1.cs",
+              "ToolTip": "C:\\Users\\P12BA18\\OneDrive - Ceridian HCM Inc\\Desktop\\Dayforce\\Assignment\\Dayforce-Intern-Assignment\\Program\\CourseEnrolmentSystem\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T11:14:53.621Z",
+              "WhenOpened": "2024-06-26T05:15:00.03Z",
               "EditorCaption": ""
             }
           ]

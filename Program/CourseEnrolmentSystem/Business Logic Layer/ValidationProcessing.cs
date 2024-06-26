@@ -15,9 +15,9 @@ namespace CourseEnrolmentSystem.Business_Layer
                               ComboBox subjectDropdownMenuTwo, ComboBox subjectDropdownMenuThree, 
                               ComboBox subjectDropdownMenuFour, ComboBox subjectDropdownMenuFive)
         {
-            if (subjectDropdownMenuOne.SelectedIndex < 0 && subjectDropdownMenuTwo.SelectedIndex < 0
-                 && subjectDropdownMenuThree.SelectedIndex < 0 && subjectDropdownMenuFour.SelectedIndex < 0
-                && subjectDropdownMenuFive.SelectedIndex < 0)
+            if (subjectDropdownMenuOne.SelectedIndex < 0 || subjectDropdownMenuTwo.SelectedIndex < 0
+                 || subjectDropdownMenuThree.SelectedIndex < 0 || subjectDropdownMenuFour.SelectedIndex < 0
+                || subjectDropdownMenuFive.SelectedIndex < 0)
             {
                 MessageBox.Show("All subjects required", "Error Validation");
                 return;

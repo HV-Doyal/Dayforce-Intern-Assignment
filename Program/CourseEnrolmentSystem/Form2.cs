@@ -23,7 +23,7 @@ namespace CourseEnrolmentSystem
             InitializeComponent();
             courseSelected = course;
             CourseTextBox.Text = course;
-            fees = FeesCalculation(course, IsFulltimeCheckBox);
+            fees = Fees.Calculate(course, IsFulltimeCheckBox);
             FeesTextBox.Text = fees.ToString();
 
         }
@@ -48,7 +48,7 @@ namespace CourseEnrolmentSystem
             string contactNumber = ContactNumberTextBox.Text;
             string address = AddressTextBox.Text;
             string course = CourseTextBox.Text;
-            fees = FeesCalculation(courseSelected, IsFulltimeCheckBox);
+            fees = Fees.Calculate(courseSelected, IsFulltimeCheckBox);
 
             if (ValidationProcessing.isUserInputValid(firstName, lastName, email, contactNumber, address, course))
             {
@@ -73,27 +73,10 @@ namespace CourseEnrolmentSystem
         }
         private void IsFulltimeCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            fees = FeesCalculation(courseSelected, IsFulltimeCheckBox);
+            fees = Fees.Calculate(courseSelected, IsFulltimeCheckBox);
             FeesTextBox.Text = fees.ToString();
         }
-        public static double FeesCalculation(string course, CheckBox isFulltimeCheckBox)
-        {
-            double finalFees = DatabaseDal.GetFulltimeCost(course);
-            var points = UiFunction.TotalPoints();
-            
-
-            if (isFulltimeCheckBox.Checked == true && ( points > 45))
-            {
-                finalFees *= 0.9;
-            }
-
-            if (isFulltimeCheckBox.Checked == false)
-            {
-                finalFees = DatabaseDal.GetParttimeCost(course);
-            }
-            return finalFees;
-        }
-
+        
         private void ClearButton_Click(object sender, EventArgs e)
         {
             FirstNameTextBox.Clear();
@@ -101,6 +84,7 @@ namespace CourseEnrolmentSystem
             EmailTextBox.Clear();
             ContactNumberTextBox.Clear();
             AddressTextBox.Clear();
+            MainFunction.ClearSubjects();
         }
     }
 }
